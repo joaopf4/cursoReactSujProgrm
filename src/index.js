@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
+// import Aula35 from './Aula35';
+// import Aula37 from './Aula37';
+// import Aula39 from './Aula39';
+// import Aula40 from './Aula40';
+// import Aula41 from './Aula41';
+// import Aula42 from './Aula42';
+// import Aula43 from './Aula43';
+// import Aula44 from './Aula44';
+// import Aula45 from './Aula45';
+import Aula46 from './Aula46';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Aula46 />
   </React.StrictMode>,
   document.getElementById('root')
 );
