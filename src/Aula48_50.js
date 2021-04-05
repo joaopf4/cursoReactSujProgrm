@@ -30,16 +30,18 @@ function Aula48_50(){
                     <li key={tarefa}>{tarefa}</li>
                 ))}
             </ul>
-            <input 
-                type="text" 
-                value={input} onChange={(e) => setInput(e.target.value)} 
-            />
-            <button 
-                type="button" 
-                onClick={handleAdd}
-            >
-                Adicionar
-            </button>
+            <form>
+                <input 
+                    type="text" 
+                    value={input} onChange={(e) => setInput(e.target.value)} 
+                />
+                <button 
+                    type="submit" 
+                    onClick={handleAdd}
+                >
+                    Adicionar
+                </button>                
+            </form>
         </div>
     );
 }
