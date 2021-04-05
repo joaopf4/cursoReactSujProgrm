@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
-function Aula48_50(){
+function Aula48_50_51_52(){
 
     const [tarefas, setTarefas] = useState([]);
     const [input, setInput] = useState('');
@@ -18,10 +18,14 @@ function Aula48_50(){
         localStorage.setItem('tarefas', JSON.stringify(tarefas))
     }, [tarefas]);
 
-    function handleAdd(){
+    const handleAdd = useCallback(() => {
         setTarefas([...tarefas, input]);
         setInput('');
-    }
+    }, [input, tarefas]);
+
+    const totalTarefas = useMemo(() => tarefas.length, [tarefas]);
+
+
 
     return (
         <div>
@@ -30,6 +34,8 @@ function Aula48_50(){
                     <li key={tarefa}>{tarefa}</li>
                 ))}
             </ul>
+            <br/>
+            <strong>Você tem {totalTarefas} tarefas! </strong><br/>
             <form>
                 <input 
                     type="text" 
@@ -46,4 +52,4 @@ function Aula48_50(){
     );
 }
 
-export default Aula48_50;
+export default Aula48_50_51_52;
