@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
-import './style.css'
-import Biscoito from './assets/biscoito.png'
+import './style.css';
+import Biscoito from './assets/biscoito.png';
 
 class Aula45 extends Component{
 
