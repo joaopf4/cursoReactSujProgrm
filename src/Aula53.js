@@ -33,6 +33,7 @@ function Aula53() {
                             {item.subtitulo}
                         </p>
                         <h1>Categoria: {item.categoria}</h1>
+                        {/* eslint-disable-next-line */}
                         <a className="botao">Acessar</a>
                     </article>
                 )
