@@ -13,12 +13,13 @@ import './index.css';
 // import Aula45 from './Aula45';
 // import Aula46 from './Aula46';
 // import Aula48_50_51_52 from './Aula48_50_51_52';
-import Aula53 from './Aula53';
+// import Aula53 from './Aula53';
+import Aula54 from './Aula54';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Aula53 />
+    <Aula54 />
   </React.StrictMode>,
   document.getElementById('root')
 );
